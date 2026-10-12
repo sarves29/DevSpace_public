@@ -7,9 +7,13 @@ terminal, a full chat UI over the `claude` CLI, a file manager, Git, and a
 remote desktop — all behind **passkey-only** authentication and designed to be
 used one-handed on a 360 px phone screen.
 
-> This repository is a public overview of the project: what it does, how it is
-> built, and the engineering decisions behind it. The source code itself is
-> private because it runs production infrastructure.
+> **About this repository.** DevSpace is a personal tool. I designed and built it
+> entirely for my own use, as the only operator of my own server. This repo is an
+> overview of the project: what it does, how it is built and the engineering
+> decisions behind it. **The source code is private** because it runs live
+> infrastructure. Every screenshot here comes from an isolated demo instance
+> filled with dummy projects and data. No real servers, hostnames, credentials
+> or project contents are shown.
 
 ---
 
@@ -26,6 +30,37 @@ connection kills whatever was running. DevSpace fixes all three:
   gestures, safe-area insets, and a hard rule that nothing scrolls sideways at 360 px.
 - **Per-project context** — each project opens in its own directory, so Claude
   Code automatically loads that project's own instructions and memory.
+
+## Screenshots
+
+*From an isolated demo instance with dummy projects. No real data is shown.*
+
+**On a phone**, the primary target:
+
+| Home | AI chat | Terminal | Files | Git |
+|:---:|:---:|:---:|:---:|:---:|
+| <img src="screenshots/01-dashboard-phone.png" width="170"> | <img src="screenshots/02-chat-phone.png" width="170"> | <img src="screenshots/03-terminal-phone.png" width="170"> | <img src="screenshots/04-files-tree-phone.png" width="170"> | <img src="screenshots/05-git-phone.png" width="170"> |
+
+**On a laptop:**
+
+<img src="screenshots/02-chat-desktop.png" alt="AI chat with tool calls and a diff card">
+
+<details>
+<summary>More desktop screenshots</summary>
+
+**Dashboard**
+<img src="screenshots/01-dashboard-desktop.png" alt="Dashboard">
+
+**Terminal**
+<img src="screenshots/03-terminal-desktop.png" alt="Terminal">
+
+**File manager and editor**
+<img src="screenshots/04-files-editor-desktop.png" alt="File manager">
+
+**Git**
+<img src="screenshots/05-git-desktop.png" alt="Git panel">
+
+</details>
 
 ## Features
 
@@ -158,6 +193,13 @@ Some of the more interesting problems — see [docs/engineering-notes.md](docs/e
 
 ## Author
 
-Built and operated by **Sarvesh** — design, backend, frontend, security and
-infrastructure. Developed in close collaboration with Claude Code as a
-pair-programmer, which is also what the portal itself is built to drive.
+**Sarvesvara Ramar** designed, built and operates DevSpace: product design,
+backend, frontend, security and infrastructure. It was developed in close
+collaboration with Claude Code as a pair-programmer, which is also what the
+portal itself is built to drive.
+
+- LinkedIn: [linkedin.com/in/sarvesvara-r-b2b310249](https://www.linkedin.com/in/sarvesvara-r-b2b310249/)
+- Email: [sarvesvarasar@gmail.com](mailto:sarvesvarasar@gmail.com)
+
+Happy to walk through the design or give a live demo on request. The code
+itself is not public.
